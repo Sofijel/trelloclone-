@@ -50,8 +50,10 @@
     <!-- Main board: four columns -->
     <main class="board">
       <section class="column">
-        <h2>Teams</h2>
-
+        <div class="column-header">
+          <h2>Teams</h2>
+          <h4>...</h4>
+        </div>
         <article class="card">
           <div class="gridContainer">
             <!-- Your ten color divs go here -->
@@ -89,8 +91,7 @@
             />
             <img
               class="avatar"
-              src="./images/Screenshot 2026-10-21 at 17.12.40.png
-              "
+              src="./images/Screenshot 2026-10-21 at 17.12.40.png"
               alt="Chanelle"
             />
           </div>
@@ -186,12 +187,14 @@
           </div>
         </article>
 
-        <button>Add a card...</button>
+        <h3>Add a card...</h3>
       </section>
 
       <section class="column">
-        <h2>Priorities</h2>
-
+        <div class="column-header">
+          <h2>Priorities</h2>
+          <h4>...</h4>
+        </div>
         <article class="card">
           <div class="label orange"></div>
           <p>Increase sales revenue by 30% in Q3</p>
@@ -202,6 +205,8 @@
               src="images/description.svg"
               alt="Has description"
             />
+
+            <p class="due-date">◷ Sep 30</p>
           </div>
         </article>
         <article class="card">
@@ -217,12 +222,14 @@
               src="images/description.svg"
               alt="Has description"
             />
+
+            <p class="due-date">◷ Jul 22</p>
           </div>
         </article>
         <article class="card">
-            <div class="gridContainer">
-          <div class="label yellow"></div>
-          <div class="label orange"></div>
+          <div class="gridContainer">
+            <div class="label yellow"></div>
+            <div class="label orange"></div>
           </div>
           <p>Test new messaging for SMB market</p>
 
@@ -234,12 +241,14 @@
             />
           </div>
         </article>
-        <button>Add a card...</button>
+        <h3>Add a card...</h3>
       </section>
 
       <section class="column">
-        <h2>Current Projects</h2>
-
+        <div class="column-header">
+          <h2>Current Projects</h2>
+          <h4>...</h4>
+        </div>
         <article class="card">
           <div class="gridContainer">
             <div class="label yellow"></div>
@@ -248,32 +257,18 @@
           </div>
           <p>Website redesign</p>
 
-          <div class="card-bottom">
-            <img
-              class="cardicon"
-              src="images/description.svg"
-              alt="Has description"
-            />
-            <div class="avatarpics">
-              <img
-                class="avatar"
-                src="./images/Screenshot 2026-10-21 at 17.12.40.png
-              "
-                alt="Chanelle"
-              />
-              <img
-                class="avatar"
-                src="./images/Screenshot 2026-10-21 at 17.13.00.png
-              "
-                alt="ohter collegue"
-              />
-              <img
-                class="avatar"
-                src="./images/Screenshot 2026-10-21 at 17.13.08.png
-              "
-                alt="it maxing guy"
-              />
-            </div>
+         <div class="card-info">
+  <img class="cardicon" src="images/description.svg" alt="Has description">
+  <p>💬 2</p>
+  <p>📎 1</p>
+  <p>☑ 4/5</p>
+</div>
+
+<div class="avatarpics project-members">
+  <img class="avatar" src="./images/Screenshot 2026-10-21 at 17.13.15.png" alt="Team member">
+  <img class="avatar" src="./images/Screenshot 2026-10-21 at 17.13.25.png" alt="Team member">
+  <img class="avatar" src="./images/Screenshot 2026-10-21 at 17.13.36.png" alt="Team member">
+</div>
           </div>
         </article>
 
@@ -285,22 +280,19 @@
           <p>Ship IOS app</p>
 
           <div class="card-bottom">
-            <img
-              class="cardicon"
-              src="images/description.svg"
-              alt="Has description"
-            />
-            <div class="avatarpics">
-              <img
-                class="avatar"
-                src="./images/Screenshot 2026-10-21 at 17.13.00.png"
-                alt="Marketing member"
-              />
-              <img
-                class="avatar"
-                src="./images/Screenshot 2026-10-21 at 17.13.15.png"
-                alt="Support member"
-              />
+
+  <div class="card-info">
+    <img class="cardicon" src="images/description.svg" alt="Has description">
+    <p>💬 1</p>
+    <p class="due-date">◷ Aug 1</p>
+  </div>
+
+  <div class="avatarpics">
+    <img class="avatar" src="./images/Screenshot 2026-10-21 at 17.13.00.png" alt="Marketing member">
+    <img class="avatar" src="./images/Screenshot 2026-10-21 at 17.13.15.png" alt="Support member">
+  </div>
+
+</div>
             </div>
           </div>
         </article>
@@ -315,6 +307,7 @@
               src="images/description.svg"
               alt="Has description"
             />
+            <p class="due-date">◷ Jul 13</p>
             <img
               class="avatar"
               src="./images/Screenshot 2026-10-21 at 17.13.08.png"
@@ -333,6 +326,7 @@
               src="images/description.svg"
               alt="Has description"
             />
+            <p class="due-date">◷ Sep 30</p>
             <img
               class="avatar"
               src="./images/Screenshot 2026-10-21 at 17.13.15.png"
@@ -351,6 +345,7 @@
               src="images/description.svg"
               alt="Has description"
             />
+            <p class="due-date">◷ Aug 19</p>
             <img
               class="avatar"
               src="./images/Screenshot 2026-10-21 at 17.13.25.png"
@@ -372,6 +367,7 @@
               src="images/description.svg"
               alt="Has description"
             />
+            <p class="due-date">◷ Jul 18</p>
             <img
               class="avatar"
               src="./images/Screenshot 2026-10-21 at 17.13.36.png"
@@ -380,12 +376,60 @@
           </div>
         </article>
 
-        <button>Add a card...</button>
+        <h3>Add a card...</h3>
       </section>
 
       <section class="column">
-        <h2>Completed Projects</h2>
+        <div class="column-header">
+          <h2>Completed Projects</h2>
+          <h4>...</h4>
+        </div>
+
+        <article class="card">
+          <div class="label yellow"></div>
+          <p>Social Media Campaign</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <p class="due-date overdue">◷ Mar 31</p>
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.15.png"
+              alt="Support member"
+            />
+          </div>
         </article>
+
+        <article class="card">
+          <div class="label red"></div>
+          <p>Update Help Documentation</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <p class="due-date overdue">◷ May 17</p>
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.25.png"
+              alt="People member"
+            />
+          </div>
+        </article>
+
+        <h3>Add a card...</h3>
+      </section>
+      <section class="column">
+        <div class="column-header">
+          <h2>Completed Projects</h2>
+          <h4>...</h4>
+        </div>
 
         <article class="card">
           <div class="label yellow"></div>
@@ -422,9 +466,52 @@
             />
           </div>
         </article>
+
+        <h3>Add a card...</h3>
+      </section>
+      <section class="column">
+        <div class="column-header">
+          <h2>Completed Projects</h2>
+          <h4>...</h4>
+        </div>
+
+        <article class="card">
+          <div class="label yellow"></div>
+          <p>Social Media Campaign</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.15.png"
+              alt="Support member"
+            />
+          </div>
         </article>
 
-        <button>Add a card...</button>
+        <article class="card">
+          <div class="label red"></div>
+          <p>Update Help Documentation</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.25.png"
+              alt="People member"
+            />
+          </div>
+        </article>
+
+        <h3>Add a card...</h3>
       </section>
     </main>
   </body>
