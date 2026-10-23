@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(201, 136, 16);
+  color: white;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.header-right p {
+  margin: 0;
+}
+
+.board-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(235, 155, 5);
+}
+
+.board-left,
+.board-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.board-header p,
+.board-header h2 {
+  margin: 0;
+}
+
+.board {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  background-color: orange;
+  align-items: flex-start;
+  overflow-x: auto;
+}
+
+.column {
+  flex: 1;
+  min-width: 280px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.933);
+  border-radius: 4px;
+}
+
+.column h2 {
+  margin: 0;
+  font-size: 18px;
+}
+.colorbox {
+  height: 8px;
+  border-radius: 3px;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+.red {
+  background-color: red;
+}
+.purple {
+  background-color: purple;
+}
+.blue {
+  background-color: blue;
+}
+.cyan {
+  background-color: cyan;
+}
+.mediumaquamarine {
+  background-color: mediumaquamarine;
+}
+.pink {
+  background-color: pink;
+}
+.gray {
+  background-color: gray;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 3px;
+  min-height: 95px;
+  box-sizing: border-box;
+}
+.card p {
+  margin: 0;
+  font-size: 15px;
+}
+.label {
+  width: 50px;
+  height: 8px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cardicon {
+  width: 16px;
+  height: 16px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.avatarpics {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

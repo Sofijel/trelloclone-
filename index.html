@@ -1,4 +1,431 @@
-<!-- tell the browser that this doc uses modern html. -->
-<!-- open the html element and give it a languange attribute in english -->
- <!-- now open the head element , it will containinformation about the page.-->
-  
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Trello Board Clone</title>
+  </head>
+
+  <body>
+    <!-- Top bar: controls for the application -->
+    <header class="app-header">
+      <!-- Left group -->
+      <div class="header-left">
+        <button>Boards</button>
+        <div class="search-box">🔍</div>
+      </div>
+
+      <!-- Center: application name -->
+      <h1>Trello</h1>
+
+      <!-- Right group -->
+      <div class="header-right">
+        <button>Add +</button>
+        <p>Chanelle</p>
+        <button>Info</button>
+        <button>Notifications</button>
+        <button>Settings</button>
+      </div>
+    </header>
+
+    <!-- Second bar: information and controls for this board -->
+    <header class="board-header">
+      <!-- Left group: board information -->
+      <div class="board-left">
+        <p>✈️</p>
+        <h2>Company Overview</h2>
+        <p>👜 travidux</p>
+        <button>☆</button>
+        <p>👥 Team Visible</p>
+      </div>
+
+      <!-- Right group: board controls -->
+      <div class="board-right">
+        <button>💬 join.me</button>
+        <button>... Show Menu</button>
+      </div>
+    </header>
+
+    <!-- Main board: four columns -->
+    <main class="board">
+      <section class="column">
+        <h2>Teams</h2>
+
+        <article class="card">
+          <div class="gridContainer">
+            <!-- Your ten color divs go here -->
+            <div class="colorbox green"></div>
+            <div class="colorbox yellow"></div>
+            <div class="colorbox orange"></div>
+            <div class="colorbox red"></div>
+            <div class="colorbox purple"></div>
+            <div class="colorbox blue"></div>
+            <div class="colorbox cyan"></div>
+            <div class="colorbox mediumaquamarine"></div>
+            <div class="colorbox pink"></div>
+            <div class="colorbox gray"></div>
+          </div>
+          <p>How To Use This Board</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label green"></div>
+          <p>Product</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.12.40.png
+              "
+              alt="Chanelle"
+            />
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label yellow"></div>
+          <p>Marketing</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.00.png"
+              alt="Marketing member"
+            />
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label orange"></div>
+          <p>Sales</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.08.png"
+              alt="Sales member"
+            />
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label red"></div>
+          <p>Support</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.15.png"
+              alt="Support member"
+            />
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label purple"></div>
+          <p>People</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.25.png"
+              alt="People member"
+            />
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label blue"></div>
+          <p>IT</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.36.png"
+              alt="IT member"
+            />
+          </div>
+        </article>
+
+        <button>Add a card...</button>
+      </section>
+
+      <section class="column">
+        <h2>Priorities</h2>
+
+        <article class="card">
+          <div class="label orange"></div>
+          <p>Increase sales revenue by 30% in Q3</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+          </div>
+        </article>
+        <article class="card">
+          <div class="gridContainer">
+            <div class="label green"></div>
+            <div class="label yellow"></div>
+          </div>
+          <p>Launch first international expansion</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+          </div>
+        </article>
+        <article class="card">
+            <div class="gridContainer">
+          <div class="label yellow"></div>
+          <div class="label orange"></div>
+          </div>
+          <p>Test new messaging for SMB market</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+          </div>
+        </article>
+        <button>Add a card...</button>
+      </section>
+
+      <section class="column">
+        <h2>Current Projects</h2>
+
+        <article class="card">
+          <div class="gridContainer">
+            <div class="label yellow"></div>
+            <div class="label cyan"></div>
+            <div class="label mediumaquamarine"></div>
+          </div>
+          <p>Website redesign</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <div class="avatarpics">
+              <img
+                class="avatar"
+                src="./images/Screenshot 2026-10-21 at 17.12.40.png
+              "
+                alt="Chanelle"
+              />
+              <img
+                class="avatar"
+                src="./images/Screenshot 2026-10-21 at 17.13.00.png
+              "
+                alt="ohter collegue"
+              />
+              <img
+                class="avatar"
+                src="./images/Screenshot 2026-10-21 at 17.13.08.png
+              "
+                alt="it maxing guy"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="gridContainer">
+            <div class="label green"></div>
+            <div class="label yellow"></div>
+          </div>
+          <p>Ship IOS app</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <div class="avatarpics">
+              <img
+                class="avatar"
+                src="./images/Screenshot 2026-10-21 at 17.13.00.png"
+                alt="Marketing member"
+              />
+              <img
+                class="avatar"
+                src="./images/Screenshot 2026-10-21 at 17.13.15.png"
+                alt="Support member"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label yellow"></div>
+          <p>Analytics Data</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.08.png"
+              alt="Sales member"
+            />
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label yellow"></div>
+          <p>Increase conversion rate by 20% by Q3</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.15.png"
+              alt="Support member"
+            />
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label blue"></div>
+          <p>Develop Engineering Blog</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.25.png"
+              alt="People member"
+            />
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="gridContainer">
+            <div class="label green"></div>
+            <div class="label yellow"></div>
+          </div>
+          <p>Brand Guidelines</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.36.png"
+              alt="IT member"
+            />
+          </div>
+        </article>
+
+        <button>Add a card...</button>
+      </section>
+
+      <section class="column">
+        <h2>Completed Projects</h2>
+        </article>
+
+        <article class="card">
+          <div class="label yellow"></div>
+          <p>Social Media Campaign</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.15.png"
+              alt="Support member"
+            />
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="label red"></div>
+          <p>Update Help Documentation</p>
+
+          <div class="card-bottom">
+            <img
+              class="cardicon"
+              src="images/description.svg"
+              alt="Has description"
+            />
+            <img
+              class="avatar"
+              src="./images/Screenshot 2026-10-21 at 17.13.25.png"
+              alt="People member"
+            />
+          </div>
+        </article>
+        </article>
+
+        <button>Add a card...</button>
+      </section>
+    </main>
+  </body>
+</html>
